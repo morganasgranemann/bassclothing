@@ -1,0 +1,86 @@
+body, div, img{
+    margin: 0;
+    padding: 0;
+}
+.fundo{
+   height: 100%;
+   width: 100%;
+   background: url('../images/women2.jpg');
+   background-size: cover;
+   position: fixed;
+   left: 0;
+}
+.opacity-fundo{
+    background-color: rgba(255, 255, 255, 0.3);
+    z-index: 100;
+    height: 100%;
+    width: 100%;
+}
+
+.logo-bass {
+    position: fixed;
+    z-index: 1;
+    top: 2em;
+    left: 4em;
+}
+
+.logo-bass img{
+    width: 6em;
+
+}
+.texto {
+    position: fixed;
+    top: 6em;
+    left: 30%;
+
+}
+.texto h5, .texto a{
+    font-family: "Segoe UI","Roboto",Helvetica,Arial,sans-serif !important;
+    font-weight: 300;
+    
+}
+.texto a{
+    text-decoration: none;
+    color: #f70098;
+}
+.texto {
+    font-style: bold;
+}
+
+@media only screen and (max-width: 480px){
+    .logo-bass{
+        top: 2em !important;
+        left: 2em;
+        right: auto !important;
+
+    }
+    .logo-bass img{
+        width: 8em !important;
+    }
+    .texto{
+        top: 16em;
+        left: 1em;
+        width: 50%;
+    }
+    
+}
+
+@media only screen and (max-width: 780px) and (min-width: 481px){
+    .logo-bass{
+        top: 2em !important;
+        left: 1.5em;
+        right: auto !important;
+
+    }
+    .logo-bass img{
+        width: 6em !important;
+    }
+    .texto{
+        top: 2em;
+        width: 30%;
+    }
+    .texto h5, .texto a{
+        font-size: 0.975em;
+        
+    }
+}
